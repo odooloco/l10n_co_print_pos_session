@@ -63,9 +63,6 @@ class pos_session(models.Model):
                 else:
                     i = i - 1
 
-        _logger.info('verificando session')
-        _logger.info(_order_first)
-
         return _order_first
 
     @api.one
