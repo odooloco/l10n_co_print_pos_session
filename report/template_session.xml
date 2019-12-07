@@ -5,8 +5,6 @@
              <t t-foreach="docs" t-as="o">
                   <t t-if="o.order_ids">
                    <div class="header">
-                     <br />
-                     <br />
                      <table width="100%">
                       <tr>
                         <td align="right"> 
@@ -14,8 +12,7 @@
                         </td>        
                       </tr>
                     </table>
-                   </div>                
-
+                   </div>
                    <div class="page" style="font-zize:18px !important;">
                    <div align="center">
                         <span t-field="o.user_id.company_id.name"/> <br/> 
@@ -75,15 +72,15 @@
                     <hr style="margin-top:4px; padding-top:4px;" />
                     <table width="100%">
                         <tr>
-                           <th width="40%"><h3>Total Ventas POS</h3></th>
-                           <th width="60%"><h3>Total Métodos de Pago</h3></th>
+                           <th width="35%"><h3>Total Ventas POS</h3></th>
+                           <th width="65%"><h3>Total Métodos de Pago</h3></th>
                         </tr>
                         <tr>
-                           <td width="40%">
+                           <td width="35%">
                                 <div style="font-size:13px;" t-raw="o.taxes_description"/>
                            </td>
                           
-                           <td width="60%" rowspan="2">
+                           <td width="65%" rowspan="2">
 
                            <div class="row mt32 mb32" style="padding-left:15px; font-size:13px; line-height: 24px; width:50%; float:left; margin-top:0 !important;">
                              <t t-set="total_pyment" t-value="0"/>
